@@ -10,8 +10,7 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "build": "tsc",
-    "dev": "concurrently \"npm run build:watch\" \"npm run start:dev\"",
-    "build:watch": "tsc -w"
+    "dev": "npm run build && npm run start:dev"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +19,6 @@
     "@types/node": "^20.11.25",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
-    "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
